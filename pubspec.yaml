@@ -23,6 +23,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.12.2
+  sqflite:
+  path:
+  fl_chart:
+  path_provider:
+  shared_preferences:
+  auto_size_text: ^2.1.0
+  connection_status_bar: ^1.1.4
+  camera: 0.5.8+17
+  cached_network_image: ^2.5.0
+  flutter_money_formatter: ^0.8.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -32,6 +43,19 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons:
+  flutter_native_splash: ^0.2.9
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app.png"
+
+flutter_native_splash:
+  image: assets/app.png
+  color: 121212
+#  flutter pub pub run flutter_native_splash:create
+#  flutter pub run flutter_native_splash:remove
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -45,9 +69,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
